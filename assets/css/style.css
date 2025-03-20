@@ -3917,6 +3917,13 @@ button {
   max-width: clamp(267px, 14.19vw, 270px);
 }
 
+.ul-footer-address{
+  color: white
+}
+.footer-logo{
+  width: 200px;
+}
+
 .ul-footer-about>* {
   margin-bottom: clamp(20px, 1.94vw, 37px);
 }
