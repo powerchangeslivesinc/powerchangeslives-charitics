@@ -1355,7 +1355,7 @@ button {
   left: 0;
   color: var(--black);
   background-color: var(--white);
-  min-width: 200px;
+  min-width: 250px;
   padding: 0;
   border-radius: 15px;
   line-height: 2;
@@ -1411,7 +1411,7 @@ button {
   left: 100%;
   top: 0;
   background-color: var(--ul-gray2);
-  min-width: 150px;
+  min-width: 200px;
   padding: 0;
   border-radius: 15px;
   opacity: 0;
