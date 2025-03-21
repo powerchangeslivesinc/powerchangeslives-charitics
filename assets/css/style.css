@@ -366,7 +366,6 @@ button {
   font-size: clamp(13px, 0.84vw, 16px);
   position: relative;
   color: var(--white);
-  margin: 15px;
 }
 
 .ul-btn:hover {
@@ -3916,13 +3915,6 @@ button {
 
 .ul-footer-about {
   max-width: clamp(267px, 14.19vw, 270px);
-}
-
-.ul-footer-address{
-  color: white
-}
-.footer-logo{
-  width: 400px;
 }
 
 .ul-footer-about>* {
