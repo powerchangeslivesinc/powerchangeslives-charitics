@@ -1335,6 +1335,7 @@ button {
 
 .menu>li:hover {
   color: var(--ul-c5);
+  text-shadow: var(--ul-c3) 0 2px 5px;
 }
 
 .menu>li>a {
@@ -1343,6 +1344,7 @@ button {
 
 .menu>li>a:hover {
   color: var(--ul-primary);
+  text-shadow: var(--ul-c3) 0 2px 5px;
 }
 
 /* Style for the first-level submenu */
