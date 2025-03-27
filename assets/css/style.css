@@ -3421,6 +3421,11 @@ button {
   margin-bottom: clamp(9px, 0.63vw, 12px);
 }
 
+.ul-testimonial-2 {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
 .ul-blogs {
   position: relative;
   overflow: hidden;
