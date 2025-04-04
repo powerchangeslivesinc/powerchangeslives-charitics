@@ -5833,3 +5833,127 @@ footer p {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/*nav bar styling*/
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  line-height: clamp(76px, 4.52vw, 86px);
+}
+
+.menu>li {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu>li:hover {
+  color: var(--ul-c5);
+}
+
+.menu>li>a {
+  color: var(--white);
+}
+
+.menu>li>a:hover {
+  color: var(--ul-primary);
+}
+
+/* Style for the first-level submenu */
+
+.submenu {
+  list-style: none;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: var(--black);
+  background-color: var(--white);
+  min-width: 250px;
+  padding: 0;
+  border-radius: 15px;
+  line-height: 2;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+.submenu li {
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: .3s;
+}
+
+.submenu li:hover {
+  color: var(--ul-primary);
+  pointer-events: all;
+}
+
+.submenu li a {
+  display: block;
+}
+
+.submenu>li>a {
+  color: var(--black);
+  font-weight: 400;
+}
+
+/* Show first-level submenu on hover */
+.menu li:hover .submenu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.menu>li:hover {
+  color: var(--ul-primary);
+}
+
+.submenu>li>:hover {
+  color: var(--ul-c5);
+}
+
+/* Style for the second-level submenu */
+.sub-submenu {
+  margin-top: 5px;
+  list-style: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: var(--ul-gray2);
+  min-width: 200px;
+  padding: 0;
+  border-radius: 15px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.submenu li:hover .sub-submenu {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+.sub-submenu li a {
+  display: block;
+}
+
+.sub-submenu li a:hover {
+  color: var(--ul-c5);
+}
+
+.ul-header-nav-wrapper {
+  background-color: #20993e;
+}
