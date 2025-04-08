@@ -18,6 +18,12 @@ html, body {
     width: 100%;
     line-height: 150%;
 }
+/* code for content */
+.mission {
+    margin: 100px;
+    font-size: large;
+}
+/* end of new class for content */
 
 html {
     height: 100%;
@@ -1908,7 +1914,6 @@ body:not(.top_panel_fixed) .top_panel_position_over.top_panel_wrap_inner, body:n
     position: relative;
     z-index: 1000;
     display: none;
-    font-size: 20px;
 }
 
 .menu_show .menu_main_nav_area {
