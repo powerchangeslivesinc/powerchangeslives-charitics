@@ -3020,9 +3020,10 @@ button {
   --bs-gutter-y: clamp(20px, 3.15vw, 60px);
 }
 
-.ul-team-row .col:nth-child(odd) .ul-team-member {
+/* Get rid bc penny wants all the cards to be aligned instead of going up and down */
+/* .ul-team-row .col:nth-child(odd) .ul-team-member {
   margin-top: clamp(34px, 2.84vw, 54px);
-}
+} */
 
 @media screen and (max-width: 479px) {
   .ul-team-row .col:nth-child(odd) .ul-team-member {
@@ -3127,9 +3128,10 @@ button {
   --bs-gutter-y: clamp(15px, 1.58vw, 30px);
 }
 
-.ul-inner-team .ul-team-row .col:nth-child(even) .ul-team-member {
+/* Get rid bc penny wants all the cards to be aligned instead of going up and down */
+/* .ul-inner-team .ul-team-row .col:nth-child(even) .ul-team-member {
   margin-top: calc(0% - clamp(34px, 2.84vw, 54px));
-}
+} */
 
 @media screen and (max-width: 767px) {
   .ul-inner-team .ul-team-row .col:nth-child(even) .ul-team-member {
