@@ -1834,12 +1834,22 @@ button {
   letter-spacing: -0.02em;
   margin-bottom: clamp(17px, 1.42vw, 27px);
   margin-left: -5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ul-banner-descr {
   font-size: clamp(15px, 0.95vw, 18px);
   font-weight: 500;
   margin-bottom: clamp(21px, 2.15vw, 41px);
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ul-banner-btns {
@@ -2049,6 +2059,11 @@ button {
   padding: clamp(100px, 12.35vw, 235px) clamp(15px, 3.15vw, 60px);
   position: relative;
   z-index: 1;
+  height: 700px; /* change depending on if penny likes the height */
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .ul-banner-2-slide::before {
