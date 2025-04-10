@@ -5834,15 +5834,17 @@ footer p {
 
 /*# sourceMappingURL=styles.css.map */
 
-/*nav bar styling*/
+/* nav bar styling */
 .menu {
   padding: 0;
   margin: 0;
   display: flex;
   line-height: clamp(76px, 4.52vw, 86px);
+  position: relative; /* Ensure submenu z-index works */
+  z-index: 10;
 }
 
-.menu>li {
+.menu > li {
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
@@ -5852,28 +5854,27 @@ footer p {
   transition: 0.3s;
 }
 
-.menu>li:hover {
+.menu > li:hover {
   color: var(--ul-c5);
 }
 
-.menu>li>a {
+.menu > li > a {
   color: var(--white);
 }
 
-.menu>li>a:hover {
+.menu > li > a:hover {
   color: var(--ul-primary);
 }
 
-/* Style for the first-level submenu */
-
+/* First-level submenu */
 .submenu {
   list-style: none;
   pointer-events: none;
   position: absolute;
   top: 100%;
   left: 0;
-  color: var(--black);
-  background-color: var(--white);
+  z-index: 9999; /* Ensures it appears over everything */
+  background-color: #ffffff !important; /* Solid white background */
   min-width: 250px;
   padding: 0;
   border-radius: 15px;
@@ -5889,7 +5890,7 @@ footer p {
   cursor: pointer;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .submenu li:hover {
@@ -5901,12 +5902,12 @@ footer p {
   display: block;
 }
 
-.submenu>li>a {
+.submenu > li > a {
   color: var(--black);
   font-weight: 400;
 }
 
-/* Show first-level submenu on hover */
+/* Show submenu on hover */
 .menu li:hover .submenu {
   display: block;
   opacity: 1;
@@ -5914,22 +5915,23 @@ footer p {
   pointer-events: all;
 }
 
-.menu>li:hover {
+.menu > li:hover {
   color: var(--ul-primary);
 }
 
-.submenu>li>:hover {
+.submenu > li > :hover {
   color: var(--ul-c5);
 }
 
-/* Style for the second-level submenu */
+/* Second-level submenu */
 .sub-submenu {
   margin-top: 5px;
   list-style: none;
   position: absolute;
   left: 100%;
   top: 0;
-  background-color: var(--ul-gray2);
+  z-index: 9999; /* Ensures it's layered above */
+  background-color: #ffffff !important; /* Solid white background */
   min-width: 200px;
   padding: 0;
   border-radius: 15px;
@@ -5954,6 +5956,40 @@ footer p {
   color: var(--ul-c5);
 }
 
+/* Wrapper nav background */
 .ul-header-nav-wrapper {
   background-color: #20993e;
+}
+
+
+/*styling for volunteer manager and team*/
+.team-layout-1 {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-layout-1.manager {
+  border: 2px solid #007bff;
+  background-color: #e9f3ff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.team-layout-1.specialist {
+  border: 1px solid #28a745;
+  background-color: #f0fff4;
+  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.15);
+}
+
+.team-info h3 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.team-info span {
+  display: block;
+  font-size: 14px;
+  color: #666;
 }
