@@ -220,7 +220,7 @@ body {
   position: relative;
 }
 img {
-  max-width: 100%;
+  max-width: 50%;
 }
 a {
   color: #80b53f;
@@ -256,7 +256,7 @@ h1 {
   font-size: 56px;
 }
 h2 {
-  font-size: 48px;
+  font-size: 16px;
 }
 h2 + p {
   margin-top: 12px;
@@ -283,13 +283,14 @@ h6 {
   margin-top: 12px;
 }
 p {
-  font: 16px/28px "Open Sans", sans-serif;
+  font: 14px/28px "Open Sans", sans-serif;
   color: #777777;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.01em;
   margin: 0 0 16px;
   padding: 0;
+  text-align: justify;
 }
 ul,
 li {
@@ -484,10 +485,10 @@ hr {
   overflow: hidden;
 }
 span.border-light-dotted {
-  border-bottom: 1px dotted #80b53f;
+  border-bottom: 1px dotted orange;
 }
 span.border-bold-dashed {
-  border-bottom: 2px dashed #80b53f;
+  border-bottom: 2px dashed orange;
 }
 blockquote {
   padding: 12px 26px 26px 42px;
@@ -582,10 +583,10 @@ ol li {
   list-style-type: decimal;
 }
 .section-container {
-  margin: 24px 0 0 0;
+  margin: 0 0 0 0;
 }
 .section-content-block {
-  padding: 80px 0 80px 0;
+  padding: 30px 0 30px 0;
   background: #ffffff;
 }
 .section-pure-white-bg {
@@ -602,13 +603,13 @@ ol li {
 }
 .section-heading-wrapper h2 {
   font-weight: 600;
-  font-size: 42px;
+  font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 42px;
   text-transform: capitalize;
 }
 .section-heading-wrapper h2 span {
-  color: #80b53f;
+  color: orange;
 }
 .section-heading-wrapper h4 {
   font-family: "Open Sans", sans-serif;
@@ -3783,7 +3784,8 @@ ul.pagination li:last-child {
 /***********************************************************************************************/
 .page-header {
   margin: 0;
-  padding: 80px 0 80px;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -3794,6 +3796,9 @@ ul.pagination li:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   border: 0px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .page-header:before {
   position: absolute;
@@ -5958,38 +5963,7 @@ footer p {
 
 /* Wrapper nav background */
 .ul-header-nav-wrapper {
-  background-color: #20993e;
+  background-color: orange;
 }
 
 
-/*styling for volunteer manager and team*/
-.team-layout-1 {
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.team-layout-1.manager {
-  border: 2px solid #007bff;
-  background-color: #e9f3ff;
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
-}
-
-.team-layout-1.specialist {
-  border: 1px solid #28a745;
-  background-color: #f0fff4;
-  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.15);
-}
-
-.team-info h3 {
-  font-size: 18px;
-  margin-top: 15px;
-}
-
-.team-info span {
-  display: block;
-  font-size: 14px;
-  color: #666;
-}
