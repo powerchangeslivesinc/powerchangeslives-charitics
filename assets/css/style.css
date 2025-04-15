@@ -1841,6 +1841,22 @@ button {
   text-overflow: ellipsis;
 }
 
+.ul-banner-title-breast {
+  font-weight: 700;
+  font-size: clamp(30px, 4.2vw, 80px);
+  font-family: var(--font-quicksand);
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(17px, 1.42vw, 27px);
+  margin-left: -5px;
+
+  white-space: nowrap;       /* force one line */
+  overflow: visible;         /* don't cut anything off */
+  text-overflow: unset;      /* remove the ellipsis */
+  max-width: 100%;
+  width: 100%;
+}
+
 .ul-banner-descr {
   font-size: clamp(15px, 0.95vw, 18px);
   font-weight: 500;
@@ -1850,6 +1866,16 @@ button {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.ul-banner-descr-breast {
+  font-size: clamp(15px, 0.95vw, 18px);
+  font-weight: 500;
+  margin-bottom: clamp(21px, 2.15vw, 41px);
+
+  white-space: nowrap;       /* keeps text on one line */
+  overflow: visible;         /* ensures it’s not clipped */
+  text-overflow: unset;      /* no ellipsis */
 }
 
 .ul-banner-btns {
@@ -2083,6 +2109,17 @@ button {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.ul-banner-2-slide-bg-img-elderly {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* Flip horizontally */
 }
 
 .ul-banner-2-slide .ul-banner-txt {
