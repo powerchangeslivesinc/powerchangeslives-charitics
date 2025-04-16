@@ -216,7 +216,6 @@ a {
 
 .dropdown-menu {
   list-style: none;
-  pointer-events: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -254,8 +253,14 @@ a {
 }
 
 .section {
-    padding: 6em 2em 6em 2em;
+    padding: 3em 2em;
     overflow: hidden;
+}
+
+.d-container {
+    max-width: 1760px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .r-container {
