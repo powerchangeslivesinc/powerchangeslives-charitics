@@ -703,6 +703,10 @@ label.required:after {
     width: 33.33333333%;
 }
 
+.column-1_3 {
+    width: 20%;
+}
+
 .column-2_3, .column-4_6, .column-8_12 {
     width: 66.66666667%;
 }

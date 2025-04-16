@@ -248,9 +248,15 @@ button {
   padding-bottom: 0;
 }
 
-.ul-section-spacing {
+/* Original section padding */
+/* .ul-section-spacing {
   padding-top: clamp(60px, 6.31vw, 120px);
   padding-bottom: clamp(60px, 6.31vw, 120px);
+} */
+
+.ul-section-spacing {
+  padding-top: clamp(30px, 3vw, 60px);
+  padding-bottom: clamp(30px, 3vw, 60px);
 }
 
 .wow {
