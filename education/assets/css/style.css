@@ -1668,7 +1668,7 @@ textarea.is-invalid {
 }
 
 .title-area {
-  margin-bottom: calc(var(--section-title-space) - 20px);
+  margin-bottom: calc(var(--section-title-space) - 50px);
 }
 
 .title-area2 {
@@ -5660,7 +5660,7 @@ blockquote.vs-quote span::before {
 }
 
 .about-layout1 .picture-box2.style1 .picture-1 {
-  margin-left: 33%;
+  margin-left: 0%;
 }
 
 .media-style1 {
@@ -6368,10 +6368,8 @@ blockquote.vs-quote span::before {
     font-size: 16px;
     margin-bottom: 10px;
   }
+
   .about-box2 {
-    padding: 60px 0;
-  }
-  .about-box2 .about-content {
     padding-left: 0;
   }
   .img-box2 .vs-circle {
@@ -6442,9 +6440,7 @@ blockquote.vs-quote span::before {
   .media-style9 {
     padding: 40px 15px 17px 15px;
   }
-  .about-box2 {
-    padding: 30px 0 0;
-  }
+ 
   .picture-box2 {
     padding-left: 10px;
   }
@@ -10118,7 +10114,7 @@ blockquote.vs-quote span::before {
   line-height: 50px;
   background-color: #2A36C1;
 }
-.about-layout1 .about-box2 {
+.about-layout1 {
   padding: 30px 30px 0px 30px;
 }
 .about-layout1 .title-area .sec-subtitle {
@@ -10608,7 +10604,7 @@ blockquote.vs-quote span::before {
 }
 /* Large devices */
 @media (max-width: 1199px) {
-  .about-layout1 .about-box2 {
+  .about-layout1{
     padding: 0px 30px 0px 30px;
   }
   .testi-layout1 .testi-style1 .testi-rating {
@@ -10631,7 +10627,7 @@ blockquote.vs-quote span::before {
   .hero-layout1.style4 .hero-content {
     max-width: 430px;
   }
-  .about-layout1 .about-box2 {
+  .about-layout1 {
     padding: 30px 20px 0px 20px;
   }
   .course-layout1 .course-style2 .course-name {
