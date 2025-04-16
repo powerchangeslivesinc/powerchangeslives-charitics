@@ -117,6 +117,29 @@ a:hover {
     color: var(--accent-color);
 }
 
+.hover-dropdown:hover > .dropdown-menu,
+.hover-dropdown .dropdown-menu:hover {
+  display: block;
+  margin-top: 0;
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.hover-dropdown .dropdown-menu {
+  display: none;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+  }
+  
+  
 button:hover,
 a[type="button"]:hover {
     background-color: var(--accent-color);
@@ -196,10 +219,63 @@ a {
 .nav-link {
     border-bottom: 2px solid transparent;
     font-size: 1.125rem;
+
+}
+
+.btn.button.bg-accent-color {
+    font-size: 1.125rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+
+ 
+  @keyframes typing {
+    0% {
+      width: 0;
+      border-right: 3px solid transparent; 
+    }
+    50% {
+      width: 100%;
+      border-right: 3px solid #fff; 
+    }
+    100% {
+      width: 100%;
+      border-right: 3px solid transparent; 
+    }
+  }
+  
+  .btn.button.bg-accent-color span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 5s steps(30, end) infinite 1s; 
+    animation-fill-mode: forwards;
+    font-family: var(--font-2);
+    letter-spacing: 1px; 
+  }
+  
+  
+
+.nav-link {
+    color: inherit;
+    /* transition: transform 0.3s ease;  */
+    display: inline-block; 
+    will-change: transform; 
 }
 
 .nav-link:hover {
-    color: var(--accent-color);
+    color:var(--accent-color);
 }
 
 .nav-link.active {
@@ -213,6 +289,7 @@ a {
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
 
 .dropdown-menu {
   list-style: none;
@@ -390,8 +467,11 @@ a {
 
 .logo-container {
     max-width: 150px;
-}
-
+    padding-left: 0;
+    margin-left: 0;
+    position: relative;
+    left: 0;
+} 
 .divider {
     display: flex;
     align-items: center;
