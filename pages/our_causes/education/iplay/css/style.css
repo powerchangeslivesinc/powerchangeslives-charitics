@@ -134,8 +134,12 @@ a img {
     border: none;
 }
 
+.sc_column_item_2{
+    margin-left: 20px;
+}
+
 .sc_image img {
-    width: 300px;
+    width: 330px;
     max-width: 100%;
     max-height: 100%;
     margin-left: 130px;
@@ -144,7 +148,8 @@ a img {
 }
 
 .wpb_content_element {
-    width: 200%
+    width: 200%;
+    text-align: justify;
 }
 
 .sc_team_item_position{
