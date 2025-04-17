@@ -136,6 +136,14 @@ a img {
     border: none;
 }
 
+.sc_image img {
+    width: 100%;         /* Or set a fixed value like 400px */
+    max-width: 400px;    /* Adjust based on your layout */
+    height: auto;
+    display: block;
+  }
+  
+
 a, button {
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -637,6 +645,7 @@ label.required:after {
     margin-right: -30px;
 }
 
+
 .row>[class*="column-"], .columns_wrap>[class*="column-"] {
     display: inline-block;
     vertical-align: top;
@@ -695,8 +704,12 @@ label.required:after {
     width: 100%;
 }
 
-.column-1_2, .column-2_4, .column-3_6, .column-4_8, .column-5_10, .column-6_12 {
+.column-2_4, .column-3_6, .column-4_8, .column-5_10, .column-6_12 {
     width: 50%;
+}
+
+.column-1_2 {
+    width: 40%;
 }
 
 .column-1_3, .column-2_6, .column-3_9, .column-4_12 {
@@ -6712,6 +6725,11 @@ iframe[name="google_conversion_frame"] {
 
 .wpb_row, .wpb_text_column, .wpb_content_element, ul.wpb_thumbnails-fluid>li, .last_toggle_el_margin, .wpb_button {
     margin-bottom: 0!important;
+}
+
+.wpb_text_column p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .sc_gap .vc_row {

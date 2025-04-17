@@ -91,7 +91,7 @@ Version: 1.0.0
   --icon-font: "Font Awesome 5 Pro";
   --main-container: 1290px;
   --container-gutters: 30px;
-  --section-space: 120px;
+  --section-space: 40px;
   --section-space-mobile: 80px;
   --section-title-space: 70px;
   --ripple-ani-duration: 5s;
@@ -374,6 +374,7 @@ h6 {
     justify-content: center !important;
   }
 }
+
 /*------------------- 2.2. Grid -------------------*/
 .slick-track > [class*=col] {
   flex-shrink: 0;
@@ -2122,7 +2123,7 @@ textarea.is-invalid {
 }
 
 .fs-md {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .fs-xs {
@@ -5656,7 +5657,11 @@ blockquote.vs-quote span::before {
 }
 
 .about-box2 {
-  padding: 60px;
+  max-width: 100%;   /* or any width you want */
+  padding: 0px 80px;    /* optional: adds padding on smaller screens */
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: justify;
 }
 
 .about-layout1 .picture-box2.style1 .picture-1 {
@@ -10188,10 +10193,6 @@ blockquote.vs-quote span::before {
   font-weight: 600;
 }
 
-.about-content.style2 {
-  padding-left: 0;
-}
-
 .cta-layout1 .cta-style2 {
   background-color: transparent;
   border-radius: 0;
@@ -11670,6 +11671,10 @@ blockquote.vs-quote span::before {
 .space,
 .space-bottom {
   padding-bottom: var(--section-space);
+}
+
+.space-bottom .container {
+  margin-left: 15%;
 }
 
 .space-extra,
