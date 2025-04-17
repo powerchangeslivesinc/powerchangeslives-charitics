@@ -609,7 +609,7 @@ ol li {
   text-transform: capitalize;
 }
 .section-heading-wrapper h2 span {
-  color: orange;
+  color: #EB5310;
 }
 .section-heading-wrapper h4 {
   font-family: "Open Sans", sans-serif;
@@ -3615,44 +3615,7 @@ ul.pagination li:last-child {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-/***********************************************************************************************/
-/* 07. EVENTS/CAMPAIGN PAGE */
-/***********************************************************************************************/
-.event-search-box {
-  margin-bottom: 48px;
-  padding: 24px;
-  background: #fafafa;
-  border: 1px solid #cccccc;
-}
-.event-search-box input {
-  border: 0px;
-  border-bottom: 1px dotted #999999;
-}
-.event-search-box input:focus {
-  border-bottom: 1px dotted #4d4d4d;
-}
-.event-search-box button {
-  border-radius: 0px;
-}
-.event-search-box .btn-event-search {
-  background-color: #80b53f;
-  border-color: #80b53f;
-  color: #fff;
-}
-.event-search-box .btn-event-search:hover {
-  background-color: #658f32;
-}
-.article-event {
-  margin-top: 24px;
-  background: #f9fafb;
-  padding: 30px;
-  min-height: 100px;
-  border-bottom: 0px solid #cccccc;
-  padding-bottom: 24px;
-}
-.article-event .single-post-inner {
-  padding: 12px 0px;
-}
+
 /***********************************************************************************************/
 /* ABOUT US PAGE */
 /***********************************************************************************************/
