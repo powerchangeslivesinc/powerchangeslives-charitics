@@ -2128,6 +2128,17 @@ button {
   transform: scaleX(-1); /* Flip horizontally */
 }
 
+.ul-banner-2-slide-bg-img-santa {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* Flip horizontally */
+}
+
 .ul-banner-2-slide .ul-banner-txt {
   padding: 0;
 }
