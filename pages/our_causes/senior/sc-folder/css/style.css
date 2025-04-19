@@ -319,6 +319,7 @@ a {
 
 .text-gray {
     color: var(--gray-color) !important;
+    text-overflow: clip;
 }
 
 .bg-accent-color-hover:hover {
