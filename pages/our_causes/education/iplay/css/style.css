@@ -37,12 +37,23 @@ html {
 h1 {
     text-align: center;
   }
+
+strong {
+    color: rgb(123, 154, 165); /* or use a hex code like #ff6600 */
+  }
   
 p {
     font-size: large;
     line-height: 1.5; /* Adjust this number to your liking */
     margin-bottom: 0em; /* or try 0.25em for tighter spacing */
     text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.instrument_description {
+    text-align: center;
 }
 
 li{
@@ -50,6 +61,8 @@ li{
     line-height: 1.5; /* Adjust this number to your liking */
     margin-bottom: 0.4em; /* or try 0.25em for tighter spacing */
     text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 ul, ol {
@@ -59,7 +72,7 @@ ul, ol {
 
 /*All text*/
 .page_content_wrap {
-    max-width: 86%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
