@@ -319,7 +319,7 @@ a {
 
 .text-gray {
     color: var(--gray-color) !important;
-    text-overflow: clip;
+    text-align: justify;
 }
 
 .bg-accent-color-hover:hover {
@@ -370,6 +370,12 @@ a {
     background-color: #FFFFFF;
     opacity: 0.75;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.sc-image {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .overlay {
