@@ -29,15 +29,27 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body {}
-
-.sc_section_title {
-    font-size: xx-large;
+.sc_section_title .sc_item_title{
+    margin: 0;
+    padding: 0;
 }
 
-p, li{
+h1 {
+    text-align: center;
+  }
+  
+p {
     font-size: large;
+    line-height: 1.5; /* Adjust this number to your liking */
     margin-bottom: 0em; /* or try 0.25em for tighter spacing */
+    text-align: justify;
+}
+
+li{
+    font-size: large;
+    line-height: 1.5; /* Adjust this number to your liking */
+    margin-bottom: 0.4em; /* or try 0.25em for tighter spacing */
+    text-align: justify;
 }
 
 ul, ol {
@@ -47,7 +59,7 @@ ul, ol {
 
 /*All text*/
 .page_content_wrap {
-    max-width: 85%;
+    max-width: 86%;
     margin: 0 auto;
 }
 
@@ -91,7 +103,7 @@ ul, ol {
   .image-grid .image-item {
     flex: 1 1 calc(33.333% - 30px);
     max-width: calc(33.333% - 30px);
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 
   .image-item img {
