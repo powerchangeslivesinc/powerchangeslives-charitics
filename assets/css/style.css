@@ -1094,6 +1094,7 @@ button {
   position: relative;
   top: 0;
   z-index: 99;
+  font-size: 0.9rem;
 }
 
 .ul-header-container {
@@ -1528,7 +1529,7 @@ button {
   .ul-header-actions button,
   .ul-header-actions a {
     font-size: 16px;
-  }
+  }ul-header
 }
 
 .ul-header-actions button i,

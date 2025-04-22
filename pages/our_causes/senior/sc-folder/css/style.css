@@ -1,5 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap");
+
 
 
 @property --progress {
@@ -50,6 +52,8 @@
     --gray-color: #aaaaaa;
     --font-1: 'Abhaya Libre', serif;
     --font-2: 'Open Sans', sans-serif;
+    --font-3: 'Manrope', serif;
+
 }
 
 h1 {
@@ -932,11 +936,12 @@ a {
 /* Default header (transparent state) */
 #ul-header {
   display: flex;
+  font-size: 1.0rem;
   align-items: center;
   justify-content: space-between;
   gap: clamp(22px, 4.2vw, 80px);
   padding: 0 clamp(16px, 3vw, 60px);
-  font-family: "Manrope", serif;
+  font-family: var(--font-3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 

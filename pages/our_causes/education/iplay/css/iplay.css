@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap");
 
 .menu {
     padding: 0;
@@ -11,7 +12,7 @@
   #ul-header {
     height: 100px; 
     font-size: larger;
-    font-family: var(--font-quicksand);
+    font-family: "Manrope,serif";
     flex-wrap: nowrap;
   }
 
