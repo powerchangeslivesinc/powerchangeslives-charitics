@@ -7,7 +7,7 @@ Version: 1.0
 CSS INDEX
 =================== 
 01. CUSTOM PROPERTIES
-02. GLOBAL
+02. GLOBAL 
 03. Components
 04. Sidebar
 05. Header
@@ -1130,8 +1130,8 @@ button {
   background-color: var(--white);
 }
 
-.ul-header-bottom.sticky .ul-header-nav a,
-.ul-header-bottom.sticky .ul-header-nav a:not([href]):not([class]) {
+.ul-header-bottom.sticky .menu a,
+.ul-header-bottom.sticky .menu a:not([href]):not([class]) {
   color: var(--ul-black);
 }
 

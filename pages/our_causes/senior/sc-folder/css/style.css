@@ -318,8 +318,13 @@ a {
 }
 
 .text-gray {
-    color: var(--gray-color) !important;
+    color: var(--secondary-dark) !important;
     text-align: justify;
+}
+
+.text-description {
+    text-align: justify; 
+    font-size: 18px
 }
 
 .bg-accent-color-hover:hover {
