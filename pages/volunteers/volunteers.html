@@ -17,14 +17,13 @@
 
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
-        <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" >      
-        <link href="css/animate.css" rel="stylesheet" type="text/css" >
-        <link href="css/venobox.css" rel="stylesheet" type="text/css" >
-        <link rel="stylesheet" href="css/styles_volunteers.css" />
-        <link rel="stylesheet" href="/assets/icon/flaticon_charitics.css">
         <!-- custom CSS -->
-        <!-- <link rel="stylesheet" href="pages/volunteers/css/style.css"> -->
+        <link rel="stylesheet" href="css/styles_volunteers.css" />
+        <!--copied css-->
+        <link rel="stylesheet" href="/assets/icon/flaticon_charitics.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        
     </head> 
 
     <body> 
@@ -395,7 +394,7 @@
                                 <br>
                                 JOIN US IN HELPING US MAKE A DIFFERENCE. 
                             </h2>
-                            <a class="btn btn-custom" href="">Join With Us</a>
+                            <a class="btn btn-custom" href="">Join Us</a>
                         </div>  <!-- end .cta-content  --> 
 
                     </div> <!-- end .col-md-12 col-sm-12  --> 
@@ -426,6 +425,36 @@
 
         </section>
         
+
+        <section class="section-content-block">
+            <div class="container">
+              <div class="row section-heading-wrapper">
+                <div class="col-md-12 text-center">
+                  <h2>Volunteer <span>Highlights</span></h2>
+                </div>
+              </div>
+          
+               <!-- Volunteers Image Slider -->
+              <div class="volunteer-slider-container">
+                <div class="swiper myVolunteerSlider">
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                      <img src="imgs/vacant.jpg" alt="volunteer image">
+                    </div>
+                    <!-- Repeat for more slides -->
+                    <div class="swiper-slide"><img src="imgs/vacant.jpg" alt="volunteer image"></div>
+                    <div class="swiper-slide"><img src="imgs/vacant.jpg" alt="volunteer image"></div>
+                    <div class="swiper-slide"><img src="imgs/vacant.jpg" alt="volunteer image"></div>
+                    <div class="swiper-slide"><img src="imgs/vacant.jpg" alt="volunteer image"></div>
+                    <div class="swiper-slide"><img src="imgs/vacant.jpg" alt="volunteer image"></div>
+                  </div>
+                </div>
+              </div>
+
+
+
+          </section>
         
         
         <!-- START FOOTER  -->
@@ -433,23 +462,34 @@
        
         <!-- END FOOTER  -->
 
-        <!-- Back To Top Button  -->
-
         
-
+        
+        
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/wow.min.js"></script>
-        <script src="js/jquery.backTop.min.js "></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/venobox.min.js"></script>
         <script src="js/custom-scripts.js"></script>
         <!-- JS file -->
         <script src="js/volunteer.js"></script>
+
+        <!-- libraries JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+          const volunteerSwiper = new Swiper('.myVolunteerSlider', {
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            speed: 1000,
+          });
+        </script>
+        
+
+
     </body>
 
 </html>
