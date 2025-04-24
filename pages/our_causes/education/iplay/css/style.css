@@ -78,6 +78,14 @@ ul, ol {
     margin: 0 auto;
 }
 
+/*stats animation*/
+.sc_skills_columns {
+    display: flex;
+    justify-content: center;
+    width:225%;
+  }
+  
+
 /* Performance Videos */
 .video-grid {
     display: flex;
