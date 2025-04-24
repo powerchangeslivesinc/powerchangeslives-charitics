@@ -575,3 +575,22 @@
 
 
 })(jQuery);
+
+document.addEventListener('scroll', function() {
+  // Changed to #ul-header to match the ID
+  const header = document.querySelector('#ul-header');
+  const menuItems = document.querySelectorAll('.menu > li, .menu > li > a, .menu > li > span');
+  
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+    menuItems.forEach(item => {
+      item.style.color = 'black';
+    });
+  } else {
+    header.classList.remove('scrolled');
+    menuItems.forEach(item => {
+      item.style.color = 'white';
+    });
+  }
+});
+//
