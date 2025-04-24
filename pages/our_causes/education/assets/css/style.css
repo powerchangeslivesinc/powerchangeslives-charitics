@@ -9860,9 +9860,12 @@ blockquote.vs-quote span::before {
   position: absolute;
   transform: translateY(30px);
   transition: all ease 0.4s;
+  width: 100%;
 }
 .category-style1 .category-title {
   margin: 0 0 5px 0;
+  text-align: center;
+  justify-content: center;
 }
 .category-style1 .category-title a {
   color: var(--white-color);
