@@ -29,9 +29,10 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.sc_section_title .sc_item_title{
-    margin: 0;
+h1.sc_section_title.sc_item_title{
+    margin: 20px 0 10px 0;
     padding: 0;
+    font-weight: bold;
 }
 
 h1 {
@@ -49,7 +50,6 @@ p {
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
-
 }
 
 .instrument_description {
