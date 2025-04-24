@@ -3313,6 +3313,43 @@ z-index: 1000;
 color: black; /* Black color when the header is sticky */
 }
 
+/* Scrolled state - force ALL text to black */
+#ul-header.scrolled .menu > li,
+#ul-header.scrolled .menu > li > a,
+#ul-header.scrolled .menu > li > span,
+#ul-header.scrolled .menu > li .menu-text {
+  color: black !important;
+}
+
+/* Special case for text nodes directly in li */
+#ul-header.scrolled .menu > li:not(:has(> a)) {
+  color: black !important;
+}
+/* Default state - transparent header */
+#ul-header:not(.scrolled) .menu > li,
+#ul-header:not(.scrolled) .menu > li > a,
+#ul-header:not(.scrolled) .menu > li > span,
+#ul-header:not(.scrolled) .menu > li .menu-text {
+  color: white !important;
+}
+/* Sticky header when scrolling */
+#ul-header.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; /* White background when scrolled */
+  color: black; /* Text color in scrolled state */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Change menu item color to black when scrolled */
+#ul-header.scrolled a {
+  color: black; /* Black color when the header is sticky */
+}
+
+
+
 /* Links in the transparent state *
 
 
