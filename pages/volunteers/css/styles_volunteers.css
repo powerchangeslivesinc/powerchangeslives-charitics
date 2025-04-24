@@ -3564,3 +3564,8 @@ background: none;
   display: block;
   border-radius: 10px;
 }
+
+.ul-footer-top-contact-info-address {
+  white-space: nowrap;
+  display: inline-block;
+}

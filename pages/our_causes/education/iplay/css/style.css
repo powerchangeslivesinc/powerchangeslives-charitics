@@ -7439,4 +7439,26 @@ h1 .wpb_text_column p, h2 .wpb_text_column p, h3 .wpb_text_column p, h4 .wpb_tex
 .eg-melody-wrapper:hover .esg-entry-media:after {
     opacity: 0;
 }
-
+.ul-header-search-opener {
+    background: #EB5310 !important; /* Ensure the background color is applied */
+    color: black !important; /* Ensure the text color is black */
+    font-size: 1.2rem !important; /* Ensure the font size */
+    cursor: pointer !important; /* Ensure the pointer cursor */
+    box-shadow: none !important; /* Ensure no box shadow */
+    border: none !important; /* Remove any default borders */
+    border-radius: 50% !important; /* Ensure round shape */
+    width: 40px !important; /* Ensure width is 40px */
+    height: 40px !important; /* Ensure height is 40px */
+    display: flex !important; /* Ensure flex layout */
+    align-items: center !important; /* Vertically center content */
+    justify-content: center !important; /* Horizontally center content */
+  }
+  
+  .ul-header-actions .ul-btn {
+    color: black !important; /* Ensure button text is black */
+    background: #EB5310 !important; /* Ensure button background is applied */
+    border: none !important; /* Remove any border */
+    font-weight: bold !important; /* Make font bold */
+    text-decoration: none !important; /* Remove text decoration */
+  }
+  
