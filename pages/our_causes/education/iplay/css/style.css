@@ -29,9 +29,10 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.sc_section_title .sc_item_title{
-    margin: 0;
+h1.sc_section_title.sc_item_title{
+    margin: 20px 0 10px 0;
     padding: 0;
+    font-weight: bold;
 }
 
 h1 {
@@ -39,17 +40,16 @@ h1 {
   }
 
 strong {
-    color: rgb(123, 154, 165); /* or use a hex code like #ff6600 */
+    color: rgb(123, 154, 165); 
   }
   
 p {
     font-size: large;
-    line-height: 1.5; /* Adjust this number to your liking */
-    margin-bottom: 0em; /* or try 0.25em for tighter spacing */
+    line-height: 1.5;
+    margin-bottom: 0em;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
-
 }
 
 .instrument_description {
@@ -58,16 +58,18 @@ p {
 
 li{
     font-size: large;
-    line-height: 1.5; /* Adjust this number to your liking */
-    margin-bottom: 0.4em; /* or try 0.25em for tighter spacing */
+    line-height: 1.5;
+    margin-bottom: 0.4em;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
+    list-style-type: square;
 }
 
 ul, ol {
     margin: 0;
-    padding-left: 1.2em; /* keeps indentation */
+    padding-left: 1.2em;
+    list-style-type: square;
 }
 
 /*All text*/
@@ -75,6 +77,14 @@ ul, ol {
     max-width: 100%;
     margin: 0 auto;
 }
+
+/*stats animation*/
+.sc_skills_columns {
+    display: flex;
+    justify-content: center;
+    width:225%;
+  }
+  
 
 /* Performance Videos */
 .video-grid {
@@ -143,14 +153,48 @@ ul, ol {
     display: block;
 }
 
-/* Instructor Text on Single Page */
+/* Instructor on Single Pages */
 .wpb_content_element {
     text-align: justify;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
 }
 .sc_column_item_2{
     width: 100%;
     margin-left: -80px;
 }
+
+.instructor-profile {
+    width: 90%;
+  }
+  
+  .instructor-row {
+    display: flex;
+    width: 95%;
+    padding: 2%;
+    margin-left: 8%;
+    align-items: center;
+  }
+  
+  .instructor-left img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .instructor-right {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .instructor-heading {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
 
 body {
     text-rendering: optimizeLegibility;
@@ -7395,3 +7439,26 @@ h1 .wpb_text_column p, h2 .wpb_text_column p, h3 .wpb_text_column p, h4 .wpb_tex
 .eg-melody-wrapper:hover .esg-entry-media:after {
     opacity: 0;
 }
+.ul-header-search-opener {
+    background: #EB5310 !important; /* Ensure the background color is applied */
+    color: black !important; /* Ensure the text color is black */
+    font-size: 1.2rem !important; /* Ensure the font size */
+    cursor: pointer !important; /* Ensure the pointer cursor */
+    box-shadow: none !important; /* Ensure no box shadow */
+    border: none !important; /* Remove any default borders */
+    border-radius: 50% !important; /* Ensure round shape */
+    width: 40px !important; /* Ensure width is 40px */
+    height: 40px !important; /* Ensure height is 40px */
+    display: flex !important; /* Ensure flex layout */
+    align-items: center !important; /* Vertically center content */
+    justify-content: center !important; /* Horizontally center content */
+  }
+  
+  .ul-header-actions .ul-btn {
+    color: black !important; /* Ensure button text is black */
+    background: #EB5310 !important; /* Ensure button background is applied */
+    border: none !important; /* Remove any border */
+    font-weight: bold !important; /* Make font bold */
+    text-decoration: none !important; /* Remove text decoration */
+  }
+  
