@@ -153,14 +153,48 @@ ul, ol {
     display: block;
 }
 
-/* Instructor Text on Single Page */
+/* Instructor on Single Pages */
 .wpb_content_element {
     text-align: justify;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
 }
 .sc_column_item_2{
     width: 100%;
     margin-left: -80px;
 }
+
+.instructor-profile {
+    width: 90%;
+  }
+  
+  .instructor-row {
+    display: flex;
+    width: 95%;
+    padding: 2%;
+    margin-left: 8%;
+    align-items: center;
+  }
+  
+  .instructor-left img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .instructor-right {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .instructor-heading {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
 
 body {
     text-rendering: optimizeLegibility;
