@@ -973,3 +973,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // footer copyright text year 
     document.getElementById("footer-copyright-year").textContent = new Date().getFullYear();
 });
+
+
+document.addEventListener('scroll', function() {
+    const header = document.querySelector('.ul-header');
+    const menuItems = document.querySelectorAll('.menu > li, .menu > li > a');
+    
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+      menuItems.forEach(item => {
+        item.style.color = 'black';
+      });
+    } else {
+      header.classList.remove('scrolled');
+      menuItems.forEach(item => {
+        item.style.color = 'white';
+      });
+    }
+  });
+
