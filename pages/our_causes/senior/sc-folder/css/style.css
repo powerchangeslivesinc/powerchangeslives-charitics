@@ -322,8 +322,13 @@ a {
 }
 
 .text-gray {
-    color: var(--gray-color) !important;
+    color: var(--secondary-dark) !important;
     text-align: justify;
+}
+
+.text-description {
+    text-align: justify; 
+    font-size: 18px
 }
 
 .bg-accent-color-hover:hover {
@@ -854,6 +859,10 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: 0.3s;
   }
+
+  .submenu li:last-child {
+    border-bottom: none;
+  }
   
   .submenu li:hover {
     color: black;
@@ -893,7 +902,7 @@ a {
     left: 100%;
     top: 0;
     z-index: 9999; /* Ensures it's layered above */
-    background-color: #ffffff !important; /* Solid white background */
+    background-color: #D2D2D1!important; /* Solid white background */
     min-width: 200px;
     padding: 0;
     border-radius: 15px;
@@ -914,6 +923,7 @@ a {
   
   .sub-submenu li a {
     display: block;
+    color: black;
   }
   
   .sub-submenu li a:hover {
@@ -1776,9 +1786,10 @@ a {
   .ul-header-actions a {
     font-size: 16px;
   }ul-header
-}
+
 
 .ul-header-actions button i,
 .ul-header-actions a i {
   display: inline-flex;
+}
 }
