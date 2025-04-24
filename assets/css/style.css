@@ -1533,7 +1533,7 @@ button {
   .ul-header-actions button,
   .ul-header-actions a {
     font-size: 16px;
-  }ul-header
+  }
 }
 
 .ul-header-actions button i,
@@ -2415,6 +2415,8 @@ button {
   background: url(../img/donations-bg.png) no-repeat center center/cover;
   position: relative;
   z-index: 1;
+  /* add spacing between home slider and help donate slider */
+  margin-top: clamp(30px, 3vw, 60px);
 }
 
 .ul-donations::before,
