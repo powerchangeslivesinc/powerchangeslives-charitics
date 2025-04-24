@@ -5661,10 +5661,10 @@ blockquote.vs-quote span::before {
 }
 
 .about-box2 {
-  max-width: 100%;   /* or any width you want */
-  padding: 0px 80px;    /* optional: adds padding on smaller screens */
-  margin-top: 50px;
-  margin-bottom: 40px;
+  max-width: 100%;
+  padding: 0px 6%;
+  margin-top: 3%;
+  margin-bottom: 3%;
   text-align: justify;
 }
 
@@ -9864,9 +9864,12 @@ blockquote.vs-quote span::before {
   position: absolute;
   transform: translateY(30px);
   transition: all ease 0.4s;
+  width: 100%;
 }
 .category-style1 .category-title {
   margin: 0 0 5px 0;
+  text-align: center;
+  justify-content: center;
 }
 .category-style1 .category-title a {
   color: var(--white-color);

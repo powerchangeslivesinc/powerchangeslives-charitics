@@ -29,9 +29,10 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.sc_section_title .sc_item_title{
-    margin: 0;
+h1.sc_section_title.sc_item_title{
+    margin: 20px 0 10px 0;
     padding: 0;
+    font-weight: bold;
 }
 
 h1 {
@@ -39,17 +40,16 @@ h1 {
   }
 
 strong {
-    color: rgb(123, 154, 165); /* or use a hex code like #ff6600 */
+    color: rgb(123, 154, 165); 
   }
   
 p {
     font-size: large;
-    line-height: 1.5; /* Adjust this number to your liking */
-    margin-bottom: 0em; /* or try 0.25em for tighter spacing */
+    line-height: 1.5;
+    margin-bottom: 0em;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
-
 }
 
 .instrument_description {
@@ -58,17 +58,33 @@ p {
 
 li{
     font-size: large;
-    line-height: 1.5; /* Adjust this number to your liking */
-    margin-bottom: 0.4em; /* or try 0.25em for tighter spacing */
+    line-height: 1.5;
+    margin-bottom: 0.4em;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
+    list-style-type: square;
 }
 
 ul, ol {
     margin: 0;
-    padding-left: 1.2em; /* keeps indentation */
+    padding-left: 1.2em;
+    list-style-type: square;
 }
+
+/*All text*/
+.page_content_wrap {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*stats animation*/
+.sc_skills_columns {
+    display: flex;
+    justify-content: center;
+    width:225%;
+  }
+  
 
 /* Performance Videos */
 .video-grid {
@@ -137,14 +153,48 @@ ul, ol {
     display: block;
 }
 
-/* Instructor Text on Single Page */
+/* Instructor on Single Pages */
 .wpb_content_element {
     text-align: justify;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
 }
 .sc_column_item_2{
     width: 100%;
     margin-left: -80px;
 }
+
+.instructor-profile {
+    width: 90%;
+  }
+  
+  .instructor-row {
+    display: flex;
+    width: 95%;
+    padding: 2%;
+    margin-left: 8%;
+    align-items: center;
+  }
+  
+  .instructor-left img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .instructor-right {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .instructor-heading {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
 
 body {
     text-rendering: optimizeLegibility;
