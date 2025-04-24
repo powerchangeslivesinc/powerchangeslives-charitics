@@ -39,13 +39,13 @@ h1 {
   }
 
 strong {
-    color: rgb(123, 154, 165); /* or use a hex code like #ff6600 */
+    color: rgb(123, 154, 165); 
   }
   
 p {
     font-size: large;
-    line-height: 1.5; /* Adjust this number to your liking */
-    margin-bottom: 0em; /* or try 0.25em for tighter spacing */
+    line-height: 1.5;
+    margin-bottom: 0em;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
@@ -58,16 +58,18 @@ p {
 
 li{
     font-size: large;
-    line-height: 1.5; /* Adjust this number to your liking */
-    margin-bottom: 0.4em; /* or try 0.25em for tighter spacing */
+    line-height: 1.5;
+    margin-bottom: 0.4em;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
+    list-style-type: square;
 }
 
 ul, ol {
     margin: 0;
-    padding-left: 1.2em; /* keeps indentation */
+    padding-left: 1.2em;
+    list-style-type: square;
 }
 
 /*All text*/
