@@ -65,6 +65,12 @@ li{
     margin: 0 auto;
 }
 
+/*instruments*/
+.instrument_icon {
+    height: 60px;
+    width: auto;
+}
+
 /*stats animation*/
 .sc_skills_columns {
     display: flex;
@@ -72,7 +78,6 @@ li{
     width:225%;
   }
   
-
 /* Performance Videos */
 .video-grid {
     display: flex;
@@ -213,10 +218,6 @@ h1, h2 {
 
 h3 {
     letter-spacing: 0.03em;
-}
-
-h5 {
-    text-transform: uppercase;
 }
 
 dt, b, strong {
@@ -7452,4 +7453,5 @@ h1 .wpb_text_column p, h2 .wpb_text_column p, h3 .wpb_text_column p, h4 .wpb_tex
     font-weight: bold !important; /* Make font bold */
     text-decoration: none !important; /* Remove text decoration */
   }
+
   
