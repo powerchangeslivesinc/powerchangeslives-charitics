@@ -3566,6 +3566,16 @@ background: none;
 }
 
 .ul-footer-top-contact-info-address {
+  color: white;
+  font-family: var(--font-primary);
   white-space: nowrap;
   display: inline-block;
+}
+
+.ul-footer-widget-title{
+  font-family: var(--font-primary);
+}
+
+.ul-footer-about-txt {
+  font-family: var(--font-primary);
 }

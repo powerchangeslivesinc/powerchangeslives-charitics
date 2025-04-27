@@ -1218,17 +1218,17 @@ button {
 }
 
 .ul-header-nav a {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .ul-header-nav a,
 .ul-header-nav a:not([href]):not([class]) {
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 .ul-header-nav a:not([href]):hover,
 .ul-header-nav a:hover {
-  color: var(--ul-primary);
+  /* color: var(--ul-primary); */
   /* bookmark */
 }
 
@@ -1400,6 +1400,7 @@ button {
   font-weight: 400;
 }
 
+
 /* Show first-level submenu on hover */
 .menu li:hover .submenu {
   display: block;
@@ -1431,6 +1432,7 @@ button {
   transform: translateX(-10px);
   transition: 0.3s;
   pointer-events: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .submenu li:hover .sub-submenu {
@@ -6158,6 +6160,7 @@ button {
   opacity: 0;
   transform: translateY(-10px);
   transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .submenu li {
@@ -6169,17 +6172,11 @@ button {
   transition: 0.3s;
 }
 
-.submenu li:hover {
-  color: black;
-  pointer-events: all;
-}
-
 .submenu li a {
   display: block;
 }
 
 .submenu > li > a {
-  color: black;
   font-weight: 400;
 }
 
@@ -6200,14 +6197,14 @@ button {
 }
 
 /* Second-level submenu */
-.sub-submenu {
+/* .sub-submenu {
   margin-top: 5px;
   list-style: none;
   position: absolute;
   left: 100%;
   top: 0;
-  z-index: 9999; /* Ensures it's layered above */
-  background-color: #ffffff !important; /* Solid white background */
+  z-index: 9999; /* Ensures it's layered above 
+  background-color: #ffffff !important; /* Solid white background 
   min-width: 200px;
   padding: 0;
   border-radius: 15px;
@@ -6215,7 +6212,7 @@ button {
   transform: translateX(-10px);
   transition: 0.3s;
   pointer-events: none;
-}
+} */
 
 
 
@@ -6273,14 +6270,14 @@ position: fixed;
 top: 0;
 width: 100%;
 background-color: white; /* White background when scrolled */
-color: black; 
+/* color: black;  */
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 z-index: 1000;
 }
 
 /* Change menu item color to black when scrolled */
-#ul-header.scrolled a {
-color: black; /* Black color when the header is sticky */
+#ul-header.scrolled a:hover {
+color: var(--ul-c5);
 }
 
 /* Links in the transparent state *

@@ -8188,6 +8188,7 @@ html, body {
 .ul-footer-top-contact-info-txt {
   display: flex;
   flex-direction: column;
+  font-family: var(--font-primary);
 }
 
 .ul-footer-top-contact-info-label {

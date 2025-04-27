@@ -54,6 +54,12 @@ h1 {
 }
 
 li{
+    font-size: large;
+    line-height: 1.5;
+    /* margin-bottom: 0.4em; */
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
     list-style-type: square;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -233,7 +239,7 @@ li>ol, li>ul {
 }
 
 ul>li, ol>li, dl>dd {
-    margin-bottom: 0.55em;
+    /* margin-bottom: 0.55em; */
     line-height: 2.2em;
 }
 

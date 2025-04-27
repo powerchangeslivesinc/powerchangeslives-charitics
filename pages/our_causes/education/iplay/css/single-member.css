@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap");
 /* nav bar styling */
+
 .menu {
   padding: 0;
   margin: 0;
@@ -16,6 +17,7 @@
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 20px;
   color: white;
   cursor: pointer;
   font-weight: 600;
@@ -33,8 +35,8 @@
 
 /* First-level submenu */
 .submenu {
-  margin: 0;
   padding: 0;
+  margin-top: 100px;
   list-style: none;
   pointer-events: none;
   position: absolute;
@@ -49,6 +51,7 @@
   opacity: 0;
   transform: translateY(-10px);
   transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .submenu li {
@@ -110,6 +113,7 @@
   transform: translateX(-10px);
   transition: 0.3s;
   pointer-events: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -128,6 +132,10 @@
 
 .sub-submenu li a:hover {
   color: var(--ul-c5);
+}
+
+.ul-footer-widget-links a:hover{
+    color: var(--ul-c5);
 }
 
 
@@ -156,10 +164,11 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transiti
 
 /* Transparent header when at the top */
 #ul-header.transparent {
-position: absolute;
+position: relative;
 top: 0;
 width: 100%;
-background-color: rgba(0, 0, 0, 0.0); /* Transparent background */
+background-color: white;
+/* background-color: rgba(0, 0, 0, 0.0); Transparent background */
 transition: background-color 0.3s ease;
 }
 
@@ -238,7 +247,8 @@ color: black; /* Black color when the header is sticky */
   bottom: calc(0% - clamp(45px, 3.42vw, 65px));
   right: calc(0% - clamp(20px, 1.58vw, 30px));
   left: calc(0% - clamp(28px, 2.1vw, 40px));
-  background-color: white;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   clip-path: polygon(23.853% -62.128%, 23.853% -62.128%, 25.154% -69.256%, 26.501% -75.412%, 27.924% -80.649%, 29.451% -85.021%, 31.112% -88.582%, 32.938% -91.387%, 34.957% -93.49%, 37.2% -94.944%, 39.695% -95.803%, 42.473% -96.123%, 42.473% -96.123%, 48.384% -94.64%, 53.914% -90.241%, 59.087% -83.422%, 63.931% -74.678%, 68.469% -64.506%, 72.727% -53.401%, 76.73% -41.858%, 80.503% -30.374%, 84.072% -19.444%, 87.461% -9.564%, 87.461% -9.564%, 90.012% -2.284%, 92.484% 5.333%, 94.768% 13.245%, 96.758% 21.413%, 98.347% 29.793%, 99.426% 38.347%, 99.89% 47.032%, 99.63% 55.808%, 98.54% 64.634%, 96.512% 73.468%, 96.512% 73.468%, 93.216% 82.481%, 89.152% 89.645%, 84.505% 94.939%, 79.462% 98.346%, 74.209% 99.844%, 68.932% 99.416%, 63.818% 97.041%, 59.053% 92.702%, 54.822% 86.377%, 51.313% 78.049%, 51.313% 78.049%, 49.202% 71.93%, 47.238% 66.923%, 45.338% 62.965%, 43.42% 59.992%, 41.399% 57.941%, 39.193% 56.746%, 36.719% 56.345%, 33.894% 56.673%, 30.635% 57.667%, 26.858% 59.263%, 26.858% 59.263%, 22.58% 60.972%, 18.758% 61.918%, 15.363% 62.078%, 12.367% 61.431%, 9.743% 59.955%, 7.462% 57.628%, 5.496% 54.429%, 3.817% 50.336%, 2.397% 45.326%, 1.208% 39.379%, 1.208% 39.379%, 0.528% 34.322%, 0.184% 29.309%, 0.154% 24.364%, 0.416% 19.508%, 0.948% 14.764%, 1.728% 10.154%, 2.734% 5.7%, 3.943% 1.424%, 5.335% -2.651%, 6.885% -6.504%, 6.885% -6.504%, 10.221% -14.198%, 12.928% -20.553%, 15.107% -25.893%, 16.855% -30.543%, 18.272% -34.828%, 19.456% -39.071%, 20.508% -43.599%, 21.525% -48.734%, 22.607% -54.802%, 23.853% -62.128%);
 
 }
@@ -550,10 +560,6 @@ background: none;
   min-width: clamp(110px, 10.51vw, 200px);
 }
 
-.ul-footer-widget-links a:hover{
-  color: var(--ul-c5);
-}
-
 @media screen and (max-width: 1199px) {
   .ul-footer-widget {
     max-width: 290px;
@@ -848,7 +854,7 @@ color: white;
 #ul-header:not(.scrolled) .menu > li > a,
 #ul-header:not(.scrolled) .menu > li > span,
 #ul-header:not(.scrolled) .menu > li .menu-text {
-color: white !important;
+color: black !important;
 }
 
 /* Scrolled state - force ALL text to black */

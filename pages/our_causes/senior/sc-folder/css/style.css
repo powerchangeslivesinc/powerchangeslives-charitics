@@ -262,6 +262,7 @@ a {
 }
 
 .d-container {
+    margin-top: 3em;
     max-width: 1760px;
     margin-right: auto;
     margin-left: auto;
@@ -979,6 +980,14 @@ a {
   color: black; /* Black color when the header is sticky */
 }
 
+.ul-footer-widget-title{
+  font-family: var(--font-primary);
+}
+
+.ul-footer-about-txt {
+  font-family: var(--font-primary);
+}
+
 /* Links in the transparent state *
 
   
@@ -1270,6 +1279,7 @@ a {
   .ul-footer-top-contact-info-address {
     font-size: clamp(17px, 1.05vw, 20px);
     font-weight: 700;
+    font-family: var(--font-primary);
   }
   
   .ul-footer-middle {
