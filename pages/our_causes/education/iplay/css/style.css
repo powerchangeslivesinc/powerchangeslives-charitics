@@ -37,19 +37,16 @@ h1.sc_section_title.sc_item_title{
 
 h1 {
     text-align: center;
-  }
-
-strong {
-    color: rgb(123, 154, 165); 
-  }
+}
   
-p {
+.main_content {
     font-size: large;
     line-height: 1.5;
     margin-bottom: 0em;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
+    color: black;
 }
 
 .instrument_description {
@@ -64,18 +61,20 @@ li{
     padding-left: 10%;
     padding-right: 10%;
     list-style-type: square;
-}
-
-ul, ol {
-    margin: 0;
-    padding-left: 1.2em;
-    list-style-type: square;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 /*All text*/
 .page_content_wrap {
     max-width: 100%;
     margin: 0 auto;
+}
+
+/*instruments*/
+.instrument_icon {
+    height: 60px;
+    width: auto;
 }
 
 /*stats animation*/
@@ -85,7 +84,6 @@ ul, ol {
     width:225%;
   }
   
-
 /* Performance Videos */
 .video-grid {
     display: flex;
@@ -169,31 +167,35 @@ ul, ol {
     width: 90%;
   }
   
-  .instructor-row {
+.instructor-row {
     display: flex;
     width: 95%;
     padding: 2%;
     margin-left: 8%;
     align-items: center;
-  }
-  
-  .instructor-left img {
+    gap: 3%;
+}
+
+.instructor-left img {
     width: 400px;
     height: auto;
-  }
-  
-  .instructor-right {
+}
+
+.instructor-right {
     flex: 1;
     font-size: 1.1rem;
     line-height: 1.6;
-  }
-  
-  .instructor-heading {
+    text-align: justify;
+    margin-right: 5%;
+}
+
+.instructor-heading {
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: center;
-  }
+    font-weight: bold;
+}
   
 
 body {
@@ -222,10 +224,6 @@ h1, h2 {
 
 h3 {
     letter-spacing: 0.03em;
-}
-
-h5 {
-    text-transform: uppercase;
 }
 
 dt, b, strong {
@@ -7461,4 +7459,5 @@ h1 .wpb_text_column p, h2 .wpb_text_column p, h3 .wpb_text_column p, h4 .wpb_tex
     font-weight: bold !important; /* Make font bold */
     text-decoration: none !important; /* Remove text decoration */
   }
+
   
