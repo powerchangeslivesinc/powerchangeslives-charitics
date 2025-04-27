@@ -59,7 +59,7 @@ p {
 li{
     font-size: large;
     line-height: 1.5;
-    margin-bottom: 0.4em;
+    /* margin-bottom: 0.4em; */
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
@@ -241,7 +241,7 @@ li>ol, li>ul {
 }
 
 ul>li, ol>li, dl>dd {
-    margin-bottom: 0.55em;
+    /* margin-bottom: 0.55em; */
     line-height: 2.2em;
 }
 
