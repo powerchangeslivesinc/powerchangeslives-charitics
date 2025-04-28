@@ -6167,11 +6167,6 @@ button {
   transition: 0.3s;
 }
 
-.submenu li:hover {
-  color: black;
-  pointer-events: all;
-}
-
 .submenu li a {
   display: block;
 }
@@ -6189,23 +6184,16 @@ button {
   pointer-events: all;
 }
 
-.menu > li:hover {
-  color: white;
-}
-
-.submenu > li > :hover {
-  color: var(--ul-c5);
-}
 
 /* Second-level submenu */
-.sub-submenu {
+/* .sub-submenu {
   margin-top: 5px;
   list-style: none;
   position: absolute;
   left: 100%;
   top: 0;
-  z-index: 9999; /* Ensures it's layered above */
-  background-color: #ffffff !important; /* Solid white background */
+  z-index: 9999; /* Ensures it's layered above 
+  background-color: #ffffff !important; /* Solid white background 
   min-width: 200px;
   padding: 0;
   border-radius: 15px;
@@ -6213,7 +6201,7 @@ button {
   transform: translateX(-10px);
   transition: 0.3s;
   pointer-events: none;
-}
+} */
 
 
 
@@ -6228,9 +6216,6 @@ button {
   display: block;
 }
 
-.sub-submenu li a:hover {
-  color: var(--ul-c5);
-}
 
 
 /* Navbar Changes */
