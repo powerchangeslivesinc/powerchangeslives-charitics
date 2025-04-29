@@ -183,10 +183,7 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 z-index: 1000;
 }
 
-/* Change menu item color to black when scrolled */
-#ul-header.scrolled a {
-color: black; /* Black color when the header is sticky */
-}
+
 
 /* Links in the transparent state *
 
@@ -407,7 +404,7 @@ background: none;
 
 .ul-footer-top-contact-infos {
   background-color: var(--ul-primary);
-  padding: clamp(20px, 1.84vw, 35px) clamp(25px, 2.63vw, 50px);
+  padding: clamp(20px, 1.84vw, 35px);
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -1518,10 +1515,6 @@ html, body {
 /* Reduce font size for text within the contact info */
 .ul-footer-top-contact-info-label {
   font-size: 12px; /* Reduce label font size */
-}
-
-.ul-footer-top-contact-info-address {
-  font-size: 15px; /* Reduce address font size */
 }
 
 /* Optional: Reduce the icon size for better fit */

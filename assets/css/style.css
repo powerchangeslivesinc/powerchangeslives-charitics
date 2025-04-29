@@ -1133,7 +1133,6 @@ button {
 
 .ul-header-bottom.sticky .menu a,
 .ul-header-bottom.sticky .menu a:not([href]):not([class]) {
-  color: var(--ul-black);
 }
 
 /* .ul-header-bottom.sticky .ul-header-actions button {
@@ -1249,7 +1248,7 @@ button {
 }
 
 @media screen and (max-width: 991px) {
-  .ul-header-nav .has-sub-menu.active {
+  .ul-header-nav .submenu.active {
     grid-template-rows: max-content 1fr;
   }
 
@@ -1328,6 +1327,7 @@ button {
   margin: 0;
   display: flex;
   line-height: clamp(76px, 4.52vw, 86px);
+  font-size: clamp(4em, 2.5vw, 10em );
 }
 
 .menu>li {
@@ -3969,7 +3969,7 @@ button {
 }
 
 .ul-footer-top-contact-info-address {
-  font-size: clamp(17px, 1.05vw, 20px);
+  font-size: clamp(14px, 1.05vw, 20px);
   font-weight: 700;
 }
 
@@ -6270,14 +6270,8 @@ position: fixed;
 top: 0;
 width: 100%;
 background-color: white; /* White background when scrolled */
-/* color: black;  */
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 z-index: 1000;
-}
-
-/* Change menu item color to black when scrolled */
-#ul-header.scrolled a:hover {
-color: var(--ul-c5);
 }
 
 /* Links in the transparent state *
@@ -6486,7 +6480,7 @@ background: none;
 
 .ul-footer-top-contact-infos {
   background-color: var(--ul-primary);
-  padding: clamp(20px, 1.84vw, 35px) clamp(25px, 2.63vw, 50px);
+  padding: clamp(20px, 1.84vw, 35px) ;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -6648,7 +6642,7 @@ background: none;
 
 .ul-footer-widget-title {
   font-weight: 700;
-  font-size: clamp(20px, 1.26vw, 24px);
+  font-size: clamp(20px, 1.26vw, 22px);
   color: var(--white);
   margin-bottom: clamp(13px, 1.37vw, 26px);
   padding-bottom: clamp(8px, 0.68vw, 13px);

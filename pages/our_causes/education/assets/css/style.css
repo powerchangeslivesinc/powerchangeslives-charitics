@@ -11762,6 +11762,7 @@ blockquote.vs-quote span::before {
   opacity: 0;
   transform: translateY(-10px);
   transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
 }
 
 .submenu li {
@@ -11773,8 +11774,12 @@ blockquote.vs-quote span::before {
   transition: 0.3s;
 }
 
+.submenu li:last-child {
+  border-bottom: none;
+}
+
 .submenu li:hover {
-  color: black;
+  color: var(--ul-c5);
   pointer-events: all;
 }
 
@@ -11795,8 +11800,9 @@ blockquote.vs-quote span::before {
   pointer-events: all;
 }
 
-.menu > li:hover {
+.menu > li >:hover {
   color: white;
+  text-shadow: var(--ul-c3) 0 2px 5px;
 }
 
 .submenu > li > :hover {
@@ -11811,7 +11817,7 @@ blockquote.vs-quote span::before {
   left: 100%;
   top: 0;
   z-index: 9999; /* Ensures it's layered above */
-  background-color: #ffffff !important; /* Solid white background */
+  background-color: var(--ul-gray2) !important; /* Solid white background */
   min-width: 200px;
   padding: 0;
   border-radius: 15px;
@@ -11819,6 +11825,7 @@ blockquote.vs-quote span::before {
   transform: translateX(-10px);
   transition: 0.3s;
   pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
 }
 
 
@@ -11832,6 +11839,7 @@ blockquote.vs-quote span::before {
 
 .sub-submenu li a {
   display: block;
+  color: black;
 }
 
 .sub-submenu li a:hover {
@@ -11880,11 +11888,6 @@ background-color: white; /* White background when scrolled */
 color: black; 
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 z-index: 1000;
-}
-
-/* Change menu item color to black when scrolled */
-#ul-header.scrolled a {
-color: black; /* Black color when the header is sticky */
 }
 
 /* Links in the transparent state *
@@ -12117,7 +12120,7 @@ background: none;
 
 .ul-footer-top-contact-infos {
   background-color: var(--ul-primary);
-  padding: clamp(20px, 1.84vw, 35px) clamp(25px, 2.63vw, 50px);
+  padding: clamp(18px, 1.84vw, 30px);
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -12280,7 +12283,7 @@ background: none;
 
 .ul-footer-widget-title {
   font-weight: 700;
-  font-size: clamp(20px, 1.26vw, 24px);
+  font-size: clamp(20px, 1.26vw, 22px);
   color: var(--white);
   margin-bottom: clamp(13px, 1.37vw, 26px);
   padding-bottom: clamp(8px, 0.68vw, 13px);
